@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 </head>
 <body>
     <section class="header">
 <nav>
     <a href="index.html"><img src="eduford_img/logo.png"> </a>
-    <div class="nav-links"> 
+    <div class="nav-links" id="navlinks"> 
+        <i class="fa fa-times" onclick="hidemenu()"></i>
         <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT</a></li>
@@ -25,15 +27,84 @@
         </ul>
 
     </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+
 </nav>
 <div class="text-box">
+    <h1>World's biggest university</h1>
+    <p>Making mebsite is now one of the easiest thing in the world. You just need to learn html,css and <br> Javescipt you are good to go.</p>
+    <a href="" class="hero-btn">Visit us to know more</a>
 
 
-    
+
 </div>
 
 
 
     </section>
+    <!--------course------------>
+    <section class="course">
+    <h1>Courses we offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit efficitur velit, id.</p>
+<div class="row">
+    <div class="course-col">
+<h3>Intermediate</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus felis ac nisl luctus lobortis ac sit amet odio. Aenean consequat lacus sit amet mauris pulvinar gravida. Suspendisse tristique sem. </p>
+    </div>
+    <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus felis ac nisl luctus lobortis ac sit amet odio. Aenean consequat lacus sit amet mauris pulvinar gravida. Suspendisse tristique sem. </p>
+         </div>
+     <div class="course-col">
+         <h3>Post Graduation</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus felis ac nisl luctus lobortis ac sit amet odio. Aenean consequat lacus sit amet mauris pulvinar gravida. Suspendisse tristique sem. </p>
+            </div>
+</div>
+
+
+   </section>
+   <!-------campus------->
+   <section class="campus">
+       <h1>Our global campus</h1>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit efficitur velit, id.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="eduford_img/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/washington.png">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+    
+    </section>
+    <!--------facilities--------->
+    <section class="facilities">
+<h1>Our facilities</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit efficitur velit, id.</p>
+    </section>
+    <!-------Javascript for toggle menu------>
+    <script>
+var navlinks =document.getElementById("navlinks");
+function showmenu(){
+    navlinks.style.right ="0";
+
+}
+function hidemenu(){
+    navlinks.style.right ="-200px"
+}
+
+    </script>
 </body>
 </html>
